@@ -17,14 +17,14 @@
                 "chapter": 2,
                 "title": "JSX",
                 "description": "Learning JSX",
-                "details": "JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript. JSX gets compiled to React.createElement() calls which return plain JavaScript objects called 'React elements'. These objects are then used to build the DOM.",
+                "details": "JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript.",
                 "video":"https://www.youtube.com/embed/7HSd1sk07uU?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0"
             },
             {
                 "chapter": 3,
                 "title": "Components",
                 "description": "What are Components?",
-                "details": "Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called 'props') and return React elements describing what should appear on the screen.",
+                "details": "Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Conceptually, components are like JavaScript functions.",
                 "video":"https://www.youtube.com/embed/MGuKhcnrqGA?list=PLb0IAmt7-GS0M8Q95RIc2lOM6nc77q1IY"
             },
             {
