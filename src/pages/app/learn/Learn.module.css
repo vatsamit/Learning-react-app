@@ -1,40 +1,57 @@
+
 .courses_container {
   width: 90vw;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  gap: 20px; 
   padding-block: 1rem;
+  padding: 20px; 
   background-color: var(--clr-bg);
-}
-
-.heading {
-  display: flex;
 }
 
 .top_head {
   display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 10px; 
   color: var(--clr-text-main);
   padding: 1rem;
   background-color: var(--clr-bg-contrast);
   border-radius: 0.5rem;
   margin: 2rem 0;
-  align-content: space-between;
+  width: 100%;
 }
 
 .back {
-  margin-right: 1rem;
+  margin-right: 10px; 
   cursor: pointer;
-  
 }
 
 .back:hover {
   color: var(--clr-accent);
 }
 
-.chapter_box {
+.heading {
+  margin: 0; 
   display: flex;
+}
+
+.content_container {
+  display: flex; 
+  flex-direction: row; 
+  gap: 20px; 
+  width: 100%;
+}
+
+.chapter_box {
+  width: 30%; 
+  display: flex;
+  flex-direction: column;
   color: var(--clr-text-main);
   padding: 1rem;
+  border-right: 1px solid #ccc; 
+  padding-right: 20px; 
 }
 
 .chapters {
@@ -56,8 +73,10 @@
 }
 
 .courses {
+  width: 70%; 
   display: flex;
   flex-direction: column;
+  padding-left: 20px; 
   padding: 1rem;
   background-color: var(--clr-bg-contrast);
   border-radius: 0.5rem;
@@ -67,4 +86,75 @@
 .chapterId {
   font-size: 1.2rem;
   padding-top: 0.4rem;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .content_container {
+    flex-direction: column; 
+  }
+
+  .chapter_box,
+  .courses {
+    width: 100%; 
+    padding: 0; 
+  }
+
+  .chapter_box {
+    border-right: none; 
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .top_head {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+
+  .heading {
+    font-size: 1.5rem; 
+  }
+  
+  .content_container {
+    gap: 10px; 
+  }
+
+  .chapterId {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses_container {
+    width: 95vw; 
+    padding: 10px; 
+  }
+
+  .top_head {
+    padding: 0.5rem; 
+    margin: 1rem 0; 
+  }
+
+  .heading {
+    font-size: 1.2rem; 
+  }
+
+  .chapter_box {
+    padding: 0.5rem;
+  }
+
+  .chapters {
+    margin: 0; 
+  }
+
+  .courses {
+    padding: 0.5rem;
+    margin: 0; 
+  }
+
+  .chapterId {
+    font-size: 0.9rem; 
+  }
 }

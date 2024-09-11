@@ -8,6 +8,8 @@ import Chapter from "./pages/app/chapter/Chapter"
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 
 function App() {
+
+  
 const browserRouter = createBrowserRouter([
   {path:"/" , element:<Nav/> , children:[
 
